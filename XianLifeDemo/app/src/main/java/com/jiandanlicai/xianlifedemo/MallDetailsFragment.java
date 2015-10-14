@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MallDetailsFragment extends Fragment {
 
@@ -40,32 +42,55 @@ public class MallDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mall_main, container, false);
-        WebView webView = (WebView) view.findViewById(R.id.web_view);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return true;
-            }
-        });
-        String url = null;
+        ImageView banner = (ImageView) view.findViewById(R.id.mall_banner);
+        ImageView content = (ImageView) view.findViewById(R.id.iv_content);
         switch (position) {
             case 0:
-                url = "file:///android_asset/mall.html";
+                banner.setVisibility(View.VISIBLE);
+                banner.setImageResource(R.drawable.banner);
+                content.setImageResource(R.drawable.mall);
                 break;
             case 1:
-                url = "file:///android_asset/global.html";
+                banner.setVisibility(View.GONE);
+                content.setImageResource(R.drawable.mall2);
                 break;
             case 2:
-                url = "file:///android_asset/new.html";
-                break;
-            case 3:
-                url = "http://sdk.jiandanlicai.com/";
+                banner.setVisibility(View.GONE);
+                content.setImageResource(R.drawable.mall3);
                 break;
         }
-        if (!TextUtils.isEmpty(url)) {
-            webView.loadUrl(url);
-        }
+        banner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "图片跳转", Toast.LENGTH_SHORT).show();
+            }
+        });
+//        WebView webView = (WebView) view.findViewById(R.id.web_view);
+//        webView.getSettings().setJavaScriptEnabled(true);
+//        webView.setWebViewClient(new WebViewClient() {
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                return true;
+//            }
+//        });
+//        String url = null;
+//        switch (position) {
+//            case 0:
+//                url = "file:///android_asset/mall.html";
+//                break;
+//            case 1:
+//                url = "file:///android_asset/global.html";
+//                break;
+//            case 2:
+//                url = "file:///android_asset/new.html";
+//                break;
+//            case 3:
+//                url = "http://sdk.jiandanlicai.com/";
+//                break;
+//        }
+//        if (!TextUtils.isEmpty(url)) {
+//            webView.loadUrl(url);
+//        }
         return view;
     }
 

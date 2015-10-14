@@ -62,7 +62,7 @@ public class MallFragment extends Fragment {
 
     public class TabAdapter extends FragmentPagerAdapter {
 
-        private String[] TITLES = new String[]{"商城首页", "全球甄选", "新品上市", "鲜Life理财"};
+        private String[] TITLES = new String[]{"商城首页", "全球甄选", "新品上市"};
 
         private FragmentManager fm;
 

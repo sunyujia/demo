@@ -7,8 +7,19 @@
     android:orientation="vertical"
     >
 
-    <WebView
-        android:id="@+id/web_view"
+    <!--<WebView-->
+        <!--android:id="@+id/web_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <ImageView
+        android:id="@+id/mall_banner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
