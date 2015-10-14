@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/new_open_shop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="278.0dip"
+                android:background="@drawable/open_shop_bg"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="69.0dip"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20.0dip"
+                            android:text="本月销售额(元)"
+                            android:textColor="@color/white"
+                            android:textSize="15.0sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20.0dip"
+                            android:text="累计收入(元)"
+                            android:textColor="@color/white"
+                            android:textSize="15.0sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/new_open_shop_ll_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90.0dip"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/new_open_shop_tv_monthsell"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_weight="1.0"
+                        android:text="10000.00"
+                        android:textColor="@color/white"
+                        android:textSize="25.0sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/new_open_shop_tv_monthincome"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_weight="1.0"
+                        android:text="8000.00"
+                        android:textColor="@color/white"
+                        android:textSize="25.0sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/new_open_shop_tv_ratio_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_open_shop_ll_1"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="当前返佣比例"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/new_open_shop_ll_ratio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_open_shop_tv_ratio_text"
+                    android:layout_marginTop="15.0dip"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="休闲"
+                            android:textColor="@color/white"
+                            android:textSize="12.0sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/new_open_shop_tv_rate_arder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:text="80%"
+                            android:textColor="@color/white"
+                            android:textSize="20.0sp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.0dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="保健"
+                            android:textColor="@color/white"
+                            android:textSize="12.0sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/new_open_shop_tv_rate_healthcare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:text="60%"
+                            android:textColor="@color/white"
+                            android:textSize="20.0sp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.0dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="母婴"
+                            android:textColor="@color/white"
+                            android:textSize="12.0sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/new_open_shop_tv_rate_motherandbaby"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:text="60%"
+                            android:textColor="@color/white"
+                            android:textSize="20.0sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_open_shop_ll_ratio"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="25.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/new_open_shop_shlves_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前货架数量:150个"
+                        android:textColor="@color/white"
+                        android:textSize="12.0sp"
+                        />
+
+                    <Button
+                        android:id="@+id/new_open_shop_shlves_more"
+                        android:layout_width="74.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/huodegengduohuojia_icon"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_open_shop_rl_rebate"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/new_open_shop_iv_arrow"
+                    android:layout_width="12.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip"
+                    android:src="@drawable/rightarrow_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/new_open_shop_tv_prompt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_toLeftOf="@id/new_open_shop_iv_arrow"
+                    android:text="您还差5000.00元，就可以提升你的返佣比例啦，加油哦~"
+                    android:textColor="@color/color_gray2"
+                    android:textSize="12.0sp"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/new_open_shop_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="165.0dip"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/new_open_shop_ll_index"
+                    android:layout_width="fill_parent"
+                    android:layout_height="7.0dip"
+                    android:layout_marginBottom="6.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/new_open_shop_iv_gonglve_banner"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_marginTop="8.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/gonglve_banner"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<com.xianlife.fragment.NewTitleBar-->
+    <!--android:id="@+id/new_open_shop_titlebar"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--/>-->
+    <include layout="@layout/shop_title"
+        />
+
+</RelativeLayout>

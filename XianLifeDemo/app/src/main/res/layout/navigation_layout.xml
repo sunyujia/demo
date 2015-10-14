@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/size144px"
+              android:background="@color/tab_bg_color"
+              android:orientation="vertical"
+    >
+    <ImageView
+        style="@style/DividerStyle"
+        />
+    <RadioGroup
+        android:id="@+id/tab_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_first"
+            style="@style/TabRadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_mall"
+            android:text="商城"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_second"
+            style="@style/TabRadioButtonStyle"
+            android:drawableTop="@drawable/tab_selector_cart"
+            android:text="购物车"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_third"
+            style="@style/TabRadioButtonStyle"
+            android:drawableTop="@drawable/tab_selector_xunxian"
+            android:text="寻鲜"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_forth"
+            style="@style/TabRadioButtonStyle"
+            android:drawableTop="@drawable/tab_selector_my_shop"
+            android:text="我的店"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_fifth"
+            style="@style/TabRadioButtonStyle"
+            android:drawableTop="@drawable/tab_selector_my"
+            android:text="我的"
+            />
+    </RadioGroup>
+</LinearLayout>

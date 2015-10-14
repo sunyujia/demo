@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_new_wode_ll_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_new_wode_rl_login_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/activity_new_wode_iv_login_photo"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="15.0dip"
+            android:src="@drawable/unlogin_photo"
+            />
+
+        <TextView
+            android:id="@+id/activity_new_wode_tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="38.0dip"
+            android:layout_toRightOf="@id/activity_new_wode_iv_login_photo"
+            android:maxLines="2"
+            android:textColor="@color/color_gray2"
+            android:textSize="16.0sp"
+            android:text="18612117649"
+            />
+
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.0dip"
+            android:src="@drawable/rightarrow_icon"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_new_wode_rl_order"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/activity_new_wode_iv_order"
+            android:layout_width="27.0dip"
+            android:layout_height="27.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:src="@drawable/dingdanguanli_icon_new"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@id/activity_new_wode_iv_order"
+            android:text="我的订单"
+            android:textColor="@color/color_gray2"
+            android:textSize="16.0sp"
+            />
+
+        <ImageView
+            android:id="@+id/activity_new_wode_iv_order_arrow"
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.0dip"
+            android:src="@drawable/rightarrow_icon"
+            />
+
+        <TextView
+            android:id="@+id/activity_new_wode_tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.0dip"
+            android:layout_toLeftOf="@id/activity_new_wode_iv_order_arrow"
+            android:text="查看全部订单"
+            android:textColor="@color/color_gray1"
+            android:textSize="15.0sp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/color_gray3"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/activity_new_wode_ll_pay"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/activity_new_wode_iv_pay"
+                android:layout_width="35.0dip"
+                android:layout_height="28.0dip"
+                android:src="@drawable/daifukuan_icon_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="待付款"
+                android:textColor="@color/color_gray1"
+                android:textSize="13.0sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_new_wode_ll_untake_delivery"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/activity_new_wode_iv_untake_delivery"
+                android:layout_width="35.0dip"
+                android:layout_height="28.0dip"
+                android:src="@drawable/daishouhuo_icon2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="待收货"
+                android:textColor="@color/color_gray1"
+                android:textSize="13.0sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_new_wode_ll_take_delivery"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/activity_new_wode_iv_take_delivery"
+                android:layout_width="35.0dip"
+                android:layout_height="28.0dip"
+                android:src="@drawable/yishouhuoicon_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="已收货"
+                android:textColor="@color/color_gray1"
+                android:textSize="13.0sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_new_wode_ll_refund"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/activity_new_wode_iv_refund"
+                android:layout_width="35.0dip"
+                android:layout_height="28.0dip"
+                android:src="@drawable/tuikuanshouhou_icon2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="退款/售后"
+                android:textColor="@color/color_gray1"
+                android:textSize="13.0sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

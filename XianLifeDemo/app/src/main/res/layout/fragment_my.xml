@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:orientation="horizontal"
+      android:background="@drawable/btn_login_empty"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="我的"
+          android:textSize="17sp"
+          android:textColor="@color/color_gray2"
+          android:layout_centerInParent="true"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/xiaoxi_icon_new"
+          android:layout_centerInParent="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="20dp"
+          />
+  </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/view_new_my_login"/>
+            <include layout="@layout/view_new_wode_item"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

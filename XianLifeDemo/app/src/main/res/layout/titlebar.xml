@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/titlebar_bgId"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:background="@color/text_color_orange"
+    >
+
+    <ImageButton
+        android:id="@+id/iv_title_left"
+        android:layout_width="28.0dip"
+        android:layout_height="23.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/btn_title_left"
+        android:visibility="visible"
+        />
+
+    <View
+        android:id="@+id/view_title_left_click"
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_title_center"
+        android:layout_width="250.0dip"
+        android:layout_height="29.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7.0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/second_normal_bg"
+            android:textSize="18.0sp"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/et_title_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffe63f02"
+            android:ellipsize="start"
+            android:hint="搜索免税直采商品"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="27.0dip"
+            android:paddingRight="27.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ffffffff"
+            android:textSize="15.0sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_title_search"
+            android:layout_width="19.0dip"
+            android:layout_height="19.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/search_icon"
+            />
+
+        <ImageView
+            android:id="@+id/iv_title_clear"
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7.0dip"
+            android:src="@drawable/x_icon"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_title_scan"
+            android:layout_width="19.0dip"
+            android:layout_height="19.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/saoyisao_icon"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="30.0dip"
+        android:layout_height="23.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        >
+
+        <ImageButton
+            android:id="@+id/iv_title_right"
+            android:layout_width="28.0dip"
+            android:layout_height="23.0dip"
+            android:background="@drawable/xiaoxi_icon_index"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_title_right_click"
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/banner_color_view"
+        />
+</RelativeLayout>

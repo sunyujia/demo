@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_wode"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="94.0dip"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/maishoudian_dianpu_bg"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="62.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15.0dip"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="60.0dip"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circal"
+                            />
+
+                        <com.xianlife.utils.CircularImage
+                            android:id="@+id/cover_user_photo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="56.0dip"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="2.0dip"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_wode_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15.0sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_wode_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3.0dip"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13.0sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="18.0dip"
+                        android:layout_height="18.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15.0dip"
+                        android:background="@drawable/whitearrow_icon"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_wode_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="85.0dip"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/main_color_view"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/main_color_view"
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/dingdanguanli_gray_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="订单管理"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_order_manage_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/wodeguanzhu_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="我的关注"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_my_attention_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/youhuijuan_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="我的优惠券"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_coupon_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/shouhuodizhi_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="收货地址"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_address_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/dianpushoucang_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="我收藏的店铺"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_collect_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/buy_webview2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_color_view"
+                    />
+
+                <ImageView
+                    android:layout_width="27.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/xiaoxi_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="57.0dip"
+                    android:text="消息"
+                    android:textColor="@color/second_normal_bg"
+                    android:textSize="14.0sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/rightarrow_icon"
+                    />
+
+                <View
+                    android:id="@+id/wode_message_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="toActivityOnClick"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="15.0dip"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@+id/fg_banner"
+        android:background="@color/banner_color_view"
+        />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_new_wode_ll_unlogin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/activity_new_wode_iv_unlogin_photo"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="25.0dip"
+        android:gravity="center_horizontal"
+        android:src="@drawable/unlogin_photo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20.0dip"
+        android:text="亲，欢迎回来！"
+        android:textColor="@color/color_gray2"
+        android:textSize="16.0sp"
+        />
+
+    <Button
+        android:id="@+id/activity_new_wode_btn_login"
+        android:layout_width="120.0dip"
+        android:layout_height="35.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/btn_corners_red"
+        android:text="登录/注册"
+        android:textColor="@color/white"
+        android:textSize="16.0sp"
+        />
+</LinearLayout>
