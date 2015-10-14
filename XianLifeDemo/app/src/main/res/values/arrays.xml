@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="image_array">
+        <item>@drawable/maishoudian_woyaojinhuo_icon</item>
+        <item>@drawable/maishoudian_huojiaguanli_icon</item>
+        <item>@drawable/maishoudian_dianpuzhuangxiu_icon</item>
+        <item>@drawable/maishoudian_dingdanguanli_icon</item>
+        <item>@drawable/maishoudian_yaoqingguanli_icon</item>
+        <item>@drawable/maishoudian_wodeshouru_icon</item>
+        <item>@drawable/maishoudian_xiaoshouguanli_icon_1</item>
+        <item>@drawable/maishoudian_kehuguanli_icon_1</item>
+        <item>@drawable/maishoudian_fenxiangdianpu_icon</item>
+        <item>@drawable/maishoudian_fenxiangdianpu_icon</item>
+    </array>
+
+    <string-array name="title_array">
+        <item>我要进货</item>
+        <item>货架管理</item>
+        <item>店铺装修</item>
+        <item>订单管理</item>
+        <item>邀请管理</item>
+        <item>我的收入</item>
+        <item>销售管理</item>
+        <item>客户管理</item>
+        <item>分享店铺</item>
+        <item>理财管理</item>
+    </string-array>
+</resources>
