@@ -20,5 +20,6 @@
     <color name="main_color_view">#ffdddddd</color>
     <color name="color_gray1">#ff888888</color>
     <color name="color_gray3">#ffbbbbbb</color>
+    <color name="color_item_bg">#fff5f3f2</color>
 
 </resources>

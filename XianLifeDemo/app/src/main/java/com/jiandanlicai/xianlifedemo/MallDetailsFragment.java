@@ -1,6 +1,7 @@
 package com.jiandanlicai.xianlifedemo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
@@ -52,17 +53,26 @@ public class MallDetailsFragment extends Fragment {
                 break;
             case 1:
                 banner.setVisibility(View.GONE);
-                content.setImageResource(R.drawable.mall2);
+                content.setImageResource(R.drawable.mall1);
                 break;
             case 2:
                 banner.setVisibility(View.GONE);
-                content.setImageResource(R.drawable.mall3);
+                content.setImageResource(R.drawable.mall2);
                 break;
         }
         banner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getActivity(),DetailActivity.class));
                 Toast.makeText(getActivity(), "图片跳转", Toast.LENGTH_SHORT).show();
+            }
+        });
+        content.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (position==2){
+                    Toast.makeText(getActivity(), "图片跳转2", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 //        WebView webView = (WebView) view.findViewById(R.id.web_view);

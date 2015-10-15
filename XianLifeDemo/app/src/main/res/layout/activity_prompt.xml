@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        />
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/title_layout"
+       android:scaleType="fitXY"
+       android:src="@drawable/prompt"
+       />
+    <Button
+        android:id="@+id/new_open_shop_free_update"
+        android:layout_width="match_parent"
+        android:layout_height="15.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/update_shop"
+        />
+</RelativeLayout>

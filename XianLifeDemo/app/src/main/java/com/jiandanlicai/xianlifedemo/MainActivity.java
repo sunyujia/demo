@@ -1,12 +1,14 @@
 package com.jiandanlicai.xianlifedemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements OnViewClickListener {
 
     MallFragment mallFragment;
 
@@ -58,8 +60,14 @@ public class MainActivity extends FragmentActivity {
             case R.id.rb_first:
                 fragment = MallFragment.newInstance();
                 break;
+            case R.id.rb_second:
+                fragment = CartFragment.newInstance();
+                break;
+            case R.id.rb_third:
+                fragment = XunxianFragment.newInstance();
+                break;
             case R.id.rb_forth:
-                fragment=ShopFragment.newInstance();
+                fragment = ShopFragment.newInstance();
                 break;
             case R.id.rb_fifth:
                 fragment = MyFragment.newInstance();
@@ -80,4 +88,23 @@ public class MainActivity extends FragmentActivity {
     }
 
 
+    @Override
+    public void onViewClick(int id) {
+        if (id == R.id.iv_cart_content) {
+            //跳转到订单界面
+            startActivity(new Intent(this, OrderActivity.class));
+        }
+        if (id == R.id.new_open_shop_iv_gonglve_banner) {
+            //底部banner
+            Toast.makeText(this, "banner", Toast.LENGTH_SHORT).show();
+        }
+        if (id == R.id.new_open_shop_tv_prompt) {
+            //返佣比例
+            Toast.makeText(this, "prompt", Toast.LENGTH_SHORT).show();
+        }
+        if (id == R.id.new_open_shop_free_update) {
+            //店铺升级
+            Toast.makeText(this, "update", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

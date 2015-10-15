@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/color_item_bg"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8.0dip"
+            android:text="实付款:"
+            android:textColor="@color/color_gray1"
+            android:textSize="14.0sp"
+            />
+
+        <TextView
+            android:id="@+id/dingDanPriceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥245.00"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14.0sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_order"
+        android:layout_width="110.0dip"
+        android:layout_height="44.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_login_border"
+        android:gravity="center"
+        android:text="确认订单"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+
+        />
+</RelativeLayout>

@@ -1,6 +1,7 @@
 package com.jiandanlicai.xianlifedemo;
 
 
+import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +22,13 @@ import java.util.List;
 /**
  * Created by max on 15/10/8.
  */
-public class ShopFragment extends Fragment {
+public class ShopFragment extends Fragment implements View.OnClickListener {
 
-    private ViewPager mViewPager;
     private ImageView[] mIndicators;
     private int mCurrentIndex;
     private ArrayList<RecyclerView> mViewList;
+    private OnViewClickListener mCallback;
+
 
     public static ShopFragment newInstance() {
         return new ShopFragment();
@@ -47,6 +50,11 @@ public class ShopFragment extends Fragment {
         mViewList.add(recyclerView);
         mViewList.add(recyclerView1);
         View rootView = inflater.inflate(R.layout.fragment_new_open_shop, null);
+        TextView tv = (TextView) rootView.findViewById(R.id.new_open_shop_tv_prompt);
+        tv.setOnClickListener(this);
+        rootView.findViewById(R.id.new_open_shop_free_update).setOnClickListener(this);
+        ImageView imageView= (ImageView) rootView.findViewById(R.id.new_open_shop_iv_gonglve_banner);
+        imageView.setOnClickListener(this);
         ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.new_open_shop_viewpager);
         viewPager.setAdapter(new ViewPagerAdapter(mViewList));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -102,6 +110,24 @@ public class ShopFragment extends Fragment {
         mIndicators[position].setEnabled(true);
         mIndicators[mCurrentIndex].setEnabled(false);
         mCurrentIndex = position;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            mCallback = (OnViewClickListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnViewClickListener");
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (mCallback != null) {
+            mCallback.onViewClick(v.getId());
+        }
     }
 
 

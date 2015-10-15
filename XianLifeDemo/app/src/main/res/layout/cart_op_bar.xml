@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_gouwuche_opbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:background="#fff5f3f2"
+    >
+
+    <ImageButton
+        android:id="@+id/ib_gwc_select"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:background="@drawable/btn_gwc_select"
+        />
+
+    <TextView
+        android:id="@+id/tv_gwc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="17.0dip"
+        android:layout_toRightOf="@id/ib_gwc_select"
+        android:text="合计： ￥"
+        android:textColor="@color/banner_color_pressed"
+        android:textSize="15.0sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_gwc_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.0dip"
+        android:layout_toRightOf="@id/tv_gwc"
+        android:text="0.0"
+        android:textColor="@color/banner_color_pressed"
+        android:textSize="15.0sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gwc"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_toRightOf="@id/ib_gwc_select"
+        android:text="不含运费"
+        android:textColor="@color/banner_color_normal"
+        android:textSize="12.0sp"
+        />
+
+    <Button
+        android:id="@+id/btn_gouwuche_account"
+        android:layout_width="100.0dip"
+        android:layout_height="44.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15.0dip"
+        android:background="@drawable/btn_login_border"
+        android:gravity="center"
+        android:text="结算"
+        android:textColor="@color/white"
+        android:textSize="15.0sp"
+        />
+
+    <Button
+        android:id="@+id/btn_gouwuche_delete"
+        android:layout_width="100.0dip"
+        android:layout_height="44.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@id/btn_gouwuche_account"
+        android:background="@null"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/banner_color_normal"
+        android:textSize="15.0sp"
+        />
+</RelativeLayout>

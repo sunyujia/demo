@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+    >
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="28.0dip"
+        android:layout_height="23.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dp"
+        android:background="@drawable/arrow_left_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/vpi__background_holo_dark"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

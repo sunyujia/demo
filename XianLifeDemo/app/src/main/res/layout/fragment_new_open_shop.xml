@@ -238,6 +238,14 @@
                         android:layout_marginLeft="10.0dip"
                         android:background="@drawable/huodegengduohuojia_icon"
                         />
+
+                    <Button
+                        android:id="@+id/new_open_shop_free_update"
+                        android:layout_width="74.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/update_shop"
+                        />
                 </LinearLayout>
             </RelativeLayout>
 
