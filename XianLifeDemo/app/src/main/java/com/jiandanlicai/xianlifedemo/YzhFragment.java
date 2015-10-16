@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 public class YzhFragment extends Fragment implements View.OnClickListener {
-
+    //我
     private OnViewClickListener mCallback;
 
     private boolean mIsLogin;
