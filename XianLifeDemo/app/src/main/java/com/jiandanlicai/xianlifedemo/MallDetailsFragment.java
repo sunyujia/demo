@@ -48,7 +48,7 @@ public class MallDetailsFragment extends Fragment {
         switch (position) {
             case 0:
                 banner.setVisibility(View.VISIBLE);
-                banner.setImageResource(R.drawable.banner);
+                banner.setImageResource(R.drawable.yzh_banner);
                 content.setImageResource(R.drawable.mall);
                 break;
             case 1:
@@ -63,15 +63,15 @@ public class MallDetailsFragment extends Fragment {
         banner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(),DetailActivity.class));
-                Toast.makeText(getActivity(), "图片跳转", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), NutsActivity.class));
             }
         });
         content.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (position==2){
-                    Toast.makeText(getActivity(), "图片跳转2", Toast.LENGTH_SHORT).show();
+                if (position == 2) {
+                    startActivity(new Intent(getActivity(), DetailActivity.class));
+//                    Toast.makeText(getActivity(), "图片跳转2", Toast.LENGTH_SHORT).show();
                 }
             }
         });

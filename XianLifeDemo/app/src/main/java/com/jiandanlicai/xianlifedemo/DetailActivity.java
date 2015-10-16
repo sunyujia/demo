@@ -21,7 +21,8 @@ public class DetailActivity extends FragmentActivity implements OnViewClickListe
         ImageButton button = (ImageButton) findViewById(R.id.ib_back);
         button.setOnClickListener(this);
         mTvTitle = (TextView) findViewById(R.id.tv_title);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, GoodsListFragment.newInstance()).commit();
+        mTvTitle.setText("商品详情");
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, GoodDetailFragment.newInstance()).commit();
     }
 
     @Override
@@ -36,6 +37,7 @@ public class DetailActivity extends FragmentActivity implements OnViewClickListe
                 break;
             case R.id.stock:
                 //进入云账户页面
+                startActivity(new Intent(this, NutsActivity.class));
                 break;
             case R.id.ib_go_buy:
                 mTitleLayout.setVisibility(View.GONE);

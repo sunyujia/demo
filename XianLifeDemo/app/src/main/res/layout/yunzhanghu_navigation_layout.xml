@@ -20,7 +20,7 @@
 
         <RadioButton
             android:id="@+id/rb_yzh"
-            style="@style/TabRadioButtonStyle"
+            style="@style/YZHTabRadioButtonStyle"
             android:checked="true"
             android:drawableTop="@drawable/tab_selector_yunzhanghu"
             android:text="云账户"
@@ -28,14 +28,14 @@
 
         <RadioButton
             android:id="@+id/rb_financing"
-            style="@style/TabRadioButtonStyle"
+            style="@style/YZHTabRadioButtonStyle"
             android:drawableTop="@drawable/tab_selector_financing"
             android:text="我要理财"
             />
 
         <RadioButton
             android:id="@+id/rb_personal"
-            style="@style/TabRadioButtonStyle"
+            style="@style/YZHTabRadioButtonStyle"
             android:drawableTop="@drawable/tab_selector_personal"
             android:text="个人中心"
             />

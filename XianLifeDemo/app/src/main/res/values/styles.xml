@@ -23,6 +23,18 @@
         <item name="android:textSize">@dimen/font24px</item>
     </style>
 
+    <style name="YZHTabRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@drawable/tab_selector_yzh_tv_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
     <style name="StyledIndicators" parent="AppTheme">
         <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
     </style>

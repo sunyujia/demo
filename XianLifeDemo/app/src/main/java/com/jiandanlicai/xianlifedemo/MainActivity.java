@@ -30,30 +30,6 @@ public class MainActivity extends FragmentActivity implements OnViewClickListene
         });
     }
 
-    private void changeFragment(int checkedId) {
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        hideFragment(ft);
-        switch (checkedId) {
-            case R.id.rb_first:
-                if (mallFragment == null) {
-                    mallFragment = MallFragment.newInstance();
-                    ft.add(R.id.main_content, mallFragment);
-                } else {
-                    ft.show(mallFragment);
-                }
-                break;
-            case R.id.rb_fifth:
-                if (myFragment == null) {
-                    myFragment = MyFragment.newInstance();
-                    ft.add(R.id.main_content, myFragment);
-                } else {
-                    ft.show(myFragment);
-                }
-                break;
-        }
-        ft.commit();
-    }
-
     private void changeContent(int checkedId) {
         Fragment fragment = null;
         switch (checkedId) {
@@ -78,15 +54,6 @@ public class MainActivity extends FragmentActivity implements OnViewClickListene
         }
     }
 
-    private void hideFragment(FragmentTransaction transaction) {
-        if (mallFragment != null) {
-            transaction.hide(mallFragment);
-        }
-        if (myFragment != null) {
-            transaction.hide(myFragment);
-        }
-    }
-
 
     @Override
     public void onViewClick(int id) {
@@ -96,15 +63,26 @@ public class MainActivity extends FragmentActivity implements OnViewClickListene
         }
         if (id == R.id.new_open_shop_iv_gonglve_banner) {
             //底部banner
-            Toast.makeText(this, "banner", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, YzhActivity.class));
         }
         if (id == R.id.new_open_shop_tv_prompt) {
             //返佣比例
-            Toast.makeText(this, "prompt", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, PromptActivity.class));
         }
         if (id == R.id.new_open_shop_free_update) {
             //店铺升级
-            Toast.makeText(this, "update", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, UpdateShopActivity.class));
         }
+        if (id == R.id.iv_content_xunxian) {
+            startActivity(new Intent(this, YzhActivity.class));
+        }
+        if (id == R.id.new_open_shop_shlves_more) {
+            //更多货架说明页
+            startActivity(new Intent(this,AboutShelfActivity.class));
+        }
+        if (id == R.id.new_open_shop_increase_income) {
+            startActivity(new Intent(this, YzhActivity.class));
+        }
+
     }
 }

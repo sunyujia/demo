@@ -53,7 +53,9 @@ public class ShopFragment extends Fragment implements View.OnClickListener {
         TextView tv = (TextView) rootView.findViewById(R.id.new_open_shop_tv_prompt);
         tv.setOnClickListener(this);
         rootView.findViewById(R.id.new_open_shop_free_update).setOnClickListener(this);
-        ImageView imageView= (ImageView) rootView.findViewById(R.id.new_open_shop_iv_gonglve_banner);
+        rootView.findViewById(R.id.new_open_shop_shlves_more).setOnClickListener(this);
+        rootView.findViewById(R.id.new_open_shop_increase_income).setOnClickListener(this);
+        ImageView imageView = (ImageView) rootView.findViewById(R.id.new_open_shop_iv_gonglve_banner);
         imageView.setOnClickListener(this);
         ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.new_open_shop_viewpager);
         viewPager.setAdapter(new ViewPagerAdapter(mViewList));

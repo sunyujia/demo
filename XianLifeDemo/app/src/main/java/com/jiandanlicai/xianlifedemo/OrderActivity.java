@@ -1,5 +1,6 @@
 package com.jiandanlicai.xianlifedemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
@@ -28,7 +29,10 @@ public class OrderActivity extends FragmentActivity implements OnViewClickListen
                 break;
             case R.id.confirm_order:
                 //确认订单点击
-                Toast.makeText(this, "点击确认订单", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, PayFinishFragment.newInstance()).commit();
+                break;
+            case R.id.iv_content_pay:
+                startActivity(new Intent(this, YzhActivity.class));
                 break;
         }
     }

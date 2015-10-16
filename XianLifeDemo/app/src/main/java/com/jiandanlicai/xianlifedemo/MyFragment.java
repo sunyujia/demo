@@ -1,6 +1,7 @@
 package com.jiandanlicai.xianlifedemo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,7 +10,6 @@ import android.view.ViewGroup;
 
 /**
  * Created by max on 15/10/8.
- *
  */
 public class MyFragment extends Fragment {
 
@@ -19,6 +19,13 @@ public class MyFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my, null);
+        View view = inflater.inflate(R.layout.fragment_my, null);
+        view.findViewById(R.id.my_financial).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), YzhActivity.class));
+            }
+        });
+        return view;
     }
 }
