@@ -1,4 +1,4 @@
-package com.jiandanlicai.xianlifedemo;
+package com.jiandanlicai.yzhlibrary.fragment;
 
 
 import android.os.Bundle;
@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class PersonalFragment extends Fragment {
+import com.jiandanlicai.yzhlibrary.R;
+
+public class PersonalFragment extends BaseFragment {
 
 
     public static PersonalFragment newInstance() {
@@ -16,6 +18,11 @@ public class PersonalFragment extends Fragment {
 
     public PersonalFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void myOnClick(View view) {
+
     }
 
     @Override

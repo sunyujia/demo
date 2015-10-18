@@ -1,17 +1,15 @@
-package com.jiandanlicai.xianlifedemo;
+package com.jiandanlicai.yzhlibrary.fragment;
 
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class YzhFragment extends Fragment implements View.OnClickListener {
+import com.jiandanlicai.yzhlibrary.R;
 
-    private OnViewClickListener mCallback;
+public class YzhFragment extends BaseFragment {
 
     private boolean mIsLogin;
 
@@ -28,6 +26,13 @@ public class YzhFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
+    public void myOnClick(View view) {
+        if (mCallback != null) {
+            mCallback.onViewClick(view);
+        }
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
@@ -35,17 +40,6 @@ public class YzhFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        try {
-            mCallback = (OnViewClickListener) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnViewClickListener");
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,10 +55,4 @@ public class YzhFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    @Override
-    public void onClick(View v) {
-        if (mCallback != null) {
-            mCallback.onViewClick(v.getId());
-        }
-    }
 }

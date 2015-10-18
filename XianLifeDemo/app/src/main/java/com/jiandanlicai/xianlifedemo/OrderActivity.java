@@ -6,7 +6,8 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.jiandanlicai.yzhlibrary.YzhActivity;
 
 public class OrderActivity extends FragmentActivity implements OnViewClickListener, View.OnClickListener {
 

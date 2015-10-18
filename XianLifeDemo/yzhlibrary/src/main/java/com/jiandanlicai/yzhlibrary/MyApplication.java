@@ -1,4 +1,4 @@
-package com.jiandanlicai.xianlifedemo;
+package com.jiandanlicai.yzhlibrary;
 
 import android.app.Application;
 

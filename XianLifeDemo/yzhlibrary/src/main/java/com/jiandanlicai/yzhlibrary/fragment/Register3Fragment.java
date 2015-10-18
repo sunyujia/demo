@@ -1,15 +1,15 @@
-package com.jiandanlicai.xianlifedemo;
+package com.jiandanlicai.yzhlibrary.fragment;
 
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class Register3Fragment extends Fragment implements View.OnClickListener {
+import com.jiandanlicai.yzhlibrary.R;
+
+public class Register3Fragment extends BaseFragment {
 
 
     public static Register3Fragment newInstance() {
@@ -20,18 +20,13 @@ public class Register3Fragment extends Fragment implements View.OnClickListener 
         // Required empty public constructor
     }
 
-    private OnViewClickListener mCallback;
-
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        try {
-            mCallback = (OnViewClickListener) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnViewClickListener");
+    public void myOnClick(View view) {
+        if (mCallback != null) {
+            mCallback.onViewClick(view);
         }
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,15 +37,9 @@ public class Register3Fragment extends Fragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_register3, container, false);
-        ImageView imageView= (ImageView) view.findViewById(R.id.iv_content_register3);
+        ImageView imageView = (ImageView) view.findViewById(R.id.iv_content_register3);
         imageView.setOnClickListener(this);
         return view;
     }
 
-    @Override
-    public void onClick(View v) {
-        if (mCallback != null) {
-            mCallback.onViewClick(v.getId());
-        }
-    }
 }

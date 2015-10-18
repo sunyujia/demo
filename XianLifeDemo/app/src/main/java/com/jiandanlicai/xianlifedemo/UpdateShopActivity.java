@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jiandanlicai.yzhlibrary.YzhActivity;
+
 public class UpdateShopActivity extends FragmentActivity implements View.OnClickListener {
 
     @Override

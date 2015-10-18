@@ -1,4 +1,4 @@
-package com.jiandanlicai.xianlifedemo;
+package com.jiandanlicai.yzhlibrary.fragment;
 
 
 import android.content.Context;
@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class BuyThreeFragment extends Fragment implements View.OnClickListener {
+import com.jiandanlicai.yzhlibrary.R;
 
+public class BuyThreeFragment extends BaseFragment {
 
-    private OnViewClickListener mCallback;
 
     public static BuyThreeFragment newInstance() {
         return new BuyThreeFragment();
@@ -23,20 +23,17 @@ public class BuyThreeFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
+    public void myOnClick(View view) {
+        if (mCallback != null) {
+            mCallback.onViewClick(view);
+        }
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        try {
-            mCallback = (OnViewClickListener) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnViewClickListener");
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,10 +44,4 @@ public class BuyThreeFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    @Override
-    public void onClick(View v) {
-        if (mCallback != null) {
-            mCallback.onViewClick(v.getId());
-        }
-    }
 }
