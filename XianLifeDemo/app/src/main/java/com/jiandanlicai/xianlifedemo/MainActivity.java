@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
-import com.jiandanlicai.yzhlibrary.YzhActivity;
+import com.jiandanlicai.yzhlibrary.SummaryActivity;
 
 public class MainActivity extends FragmentActivity implements OnViewClickListener {
-
-    MallFragment mallFragment;
-
-    MyFragment myFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +58,10 @@ public class MainActivity extends FragmentActivity implements OnViewClickListene
             //跳转到订单界面
             startActivity(new Intent(this, OrderActivity.class));
         }
-        if (id == R.id.new_open_shop_iv_gonglve_banner) {
-            //底部banner
-            startActivity(new Intent(this, YzhActivity.class));
-        }
+//        if (id == R.id.new_open_shop_iv_gonglve_banner) {
+//            底部banner
+//            startActivity(new Intent(this, YzhActivity.class));
+//        }
         if (id == R.id.new_open_shop_tv_prompt) {
             //返佣比例
             startActivity(new Intent(this, PromptActivity.class));
@@ -74,14 +71,14 @@ public class MainActivity extends FragmentActivity implements OnViewClickListene
             startActivity(new Intent(this, UpdateShopActivity.class));
         }
         if (id == R.id.iv_content_xunxian) {
-            startActivity(new Intent(this, YzhActivity.class));
+            //startActivity(new Intent(this, YzhActivity.class));
         }
         if (id == R.id.new_open_shop_shlves_more) {
             //更多货架说明页
-            startActivity(new Intent(this,AboutShelfActivity.class));
+            startActivity(new Intent(this, AboutShelfActivity.class));
         }
-        if (id == R.id.new_open_shop_increase_income) {
-            startActivity(new Intent(this, YzhActivity.class));
+        if (id == R.id.my_shop_layout) {
+            startActivity(new Intent(this, SummaryActivity.class));
         }
 
     }

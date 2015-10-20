@@ -1,7 +1,6 @@
-<manifest
-    package="com.jiandanlicai.yzhlibrary"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiandanlicai.yzhlibrary" >
 
     <application
         android:name=".MyApplication"

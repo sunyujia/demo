@@ -31,6 +31,8 @@
         <activity android:name=".NutsActivity"/>
         <activity android:name=".UpdateShopActivity"/>
         <activity android:name=".AboutShelfActivity"/>
+        <activity android:name=".AuthorizeActivity"/>
+        <activity android:name="com.jiandanlicai.yzhlibrary.SummaryActivity"/>
     </application>
 
 </manifest>

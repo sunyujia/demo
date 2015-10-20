@@ -33,7 +33,8 @@ public class OrderActivity extends FragmentActivity implements OnViewClickListen
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, PayFinishFragment.newInstance()).commit();
                 break;
             case R.id.iv_content_pay:
-                startActivity(new Intent(this, YzhActivity.class));
+                setResult(RESULT_OK);
+                finish();
                 break;
         }
     }

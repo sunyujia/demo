@@ -52,6 +52,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener {
         View rootView = inflater.inflate(R.layout.fragment_new_open_shop, null);
         TextView tv = (TextView) rootView.findViewById(R.id.new_open_shop_tv_prompt);
         tv.setOnClickListener(this);
+        rootView.findViewById(R.id.my_shop_layout).setOnClickListener(this);
         rootView.findViewById(R.id.new_open_shop_free_update).setOnClickListener(this);
         rootView.findViewById(R.id.new_open_shop_shlves_more).setOnClickListener(this);
         rootView.findViewById(R.id.new_open_shop_increase_income).setOnClickListener(this);

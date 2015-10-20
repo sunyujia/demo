@@ -48,7 +48,7 @@ public class MallDetailsFragment extends Fragment {
         switch (position) {
             case 0:
                 banner.setVisibility(View.VISIBLE);
-                banner.setImageResource(R.drawable.yzh_banner);
+                banner.setImageResource(R.drawable.banner);
                 content.setImageResource(R.drawable.mall);
                 break;
             case 1:
@@ -63,7 +63,7 @@ public class MallDetailsFragment extends Fragment {
         banner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), NutsActivity.class));
+//                startActivity(new Intent(getActivity(), NutsActivity.class));
             }
         });
         content.setOnClickListener(new View.OnClickListener() {

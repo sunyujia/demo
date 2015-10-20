@@ -50,7 +50,8 @@ public class GoodDetailFragment extends Fragment implements View.OnClickListener
         button.setOnClickListener(this);
         ImageButton cart = (ImageButton) view.findViewById(R.id.ib_go_buy);
         cart.setOnClickListener(this);
-        ImageView imageView= (ImageView) view.findViewById(R.id.iv_content_detail);
+        view.findViewById(R.id.join_buy).setOnClickListener(this);
+        ImageView imageView = (ImageView) view.findViewById(R.id.iv_content_detail);
         return view;
     }
 

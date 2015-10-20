@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,10 +20,21 @@ public class UpdateShopActivity extends FragmentActivity implements View.OnClick
         textView.setText("免费升级店铺");
         ImageView imageView = (ImageView) findViewById(R.id.iv_content_update_shop);
         imageView.setOnClickListener(this);
+        ImageButton ibBack = (ImageButton) findViewById(R.id.ib_back);
+        ibBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, YzhActivity.class));
+        switch (v.getId()) {
+            case R.id.ib_back:
+                finish();
+                break;
+            case R.id.iv_content_update_shop:
+                Intent intent = new Intent(this, YzhActivity.class);
+                intent.putExtra("from", 1);
+                startActivity(intent);
+                break;
+        }
     }
 }
